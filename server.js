@@ -9,7 +9,7 @@ const MoviesModel = require("./movies.js");
 app.use(express.json());
 require('dotenv').config();
 
-const mongoString = process.env.DATABASE_URL
+const mongoString = "mongodb+srv://theinspirator6:theinspirator6@cluster0.vpomp59.mongodb.net/staged"
 mongoose.connect(mongoString);
 const database = mongoose.connection
 database.on('error', (error) => {
